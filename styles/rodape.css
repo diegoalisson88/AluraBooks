@@ -1,0 +1,57 @@
+hr {
+    margin: 0;
+}
+
+.rodape {
+    background-color: var(--branco);
+    padding: 1em;
+}
+
+.lista-rodape {
+    display: none;
+}
+
+/* RESPONSIVIDADE PARA TABLET */
+@media screen and (min-width: 1024px) {
+
+    .lista-rodape {
+        display: block;
+    }
+
+    .rodape__titulo {
+        font-size: 24px;
+    }
+
+    .rodape {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .lista-rodape__item {
+        display: flex;
+        align-items: center;
+        margin: 0.6em 0;
+    }
+
+    .lista-rodape__titulo {
+        color: var(--cinza-claro);
+        font-size: 14px;
+        padding: 0 0 1em 0;
+    }
+
+    .lista-rodape__link {
+        color: var(--cinza);
+        font-size: 14px;
+        text-decoration: none;
+        margin-left: 0.6em;
+    }
+
+    .lista-rodape__link:hover {
+        color: var(--laranja);
+    }
+
+    .botao__ancora:active {
+        background-color: var(--azul);
+        }
+
+}
